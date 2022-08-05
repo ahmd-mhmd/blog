@@ -17,9 +17,6 @@
 	min-width: 160px;
 	height: calc(2.5rem + 20px)
 }
-.listitem>img{
-	height: 2.5rem;
-}
 .listitem::before{
 	content: '';
 	position: absolute;
@@ -35,6 +32,13 @@
 }
 .listitem:hover{
 	transform: scale(1.1);
+}
+.image{
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 2.5rem;
+	width: 4rem;
 }
 .skills{
 	display: flex;
