@@ -45,7 +45,7 @@ const Text = ({input}) => {
 					str.split(' ').some(elem => Boolean(elem.match(/\[.+\]\(.+\)/))) ? 
 					<div>
 						<span>{str.replace(/(.*)(\[.+\]\(.+\))(.*)/, '$1 ')}</span>
-						<a href={str.replace(/(.*)(\[.+\])(\()(.+)(\))(.*)/, '$4')} target='_blank'>{str.replace(/(.*)(\[)(.+)(\])(\(.+\))(.*)/, '$3')}</a>
+						<a href={str.replace(/(.*)(\[.+\])(\()(.+)(\))(.*)/, '$4')} target='_blank' rel="noreferrer">{str.replace(/(.*)(\[)(.+)(\])(\(.+\))(.*)/, '$3')}</a>
 						<span>{str.replace(/(.*)(\[.+\]\(.+\))(.*)/, ' $3')}</span>
 					</div>
 					:

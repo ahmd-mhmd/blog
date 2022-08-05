@@ -23,7 +23,7 @@ export default function Home() {
       >
         <header className={styles.header}>
           <h1>Ahamd Mohammad</h1>
-          <h1>I'm a <span className={styles.blue}>frontend</span> web developer</h1>
+          <h1>I&apos;m a <span className={styles.blue}>frontend</span> web developer</h1>
           <a className={styles.darr} onClick={scroll}>&gt;</a>
         </header>
         <section className={styles.skills}>
