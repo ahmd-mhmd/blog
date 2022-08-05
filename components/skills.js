@@ -1,7 +1,7 @@
 import React from 'react'
 // import skills from '../pages/data/skills.json'
 import styles from '../styles/skills.module.css'
-import {Image} from 'next/image'
+import Image from 'next/image'
 
 const Skills = () => {
 	const skills = [
@@ -61,7 +61,7 @@ const Skills = () => {
 				{skills.map((skill, index) => {
 					return (
 						<li key={index} className={styles.listitem}>
-							{Boolean(skill.logo) && <Image src={skill.logo} alt={skill.skill}/>}
+							{Boolean(skill.logo) && <Image src={skill.logo} layout='fill' alt={skill.skill}/>}
 							<span>{skill.skill}</span>
 						</li>
 					)
