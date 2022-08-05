@@ -1,9 +1,28 @@
 import React from 'react'
 import styles from '../styles/projects.module.css'
-import projects from '../pages/data/projects.json'
+// import projects from '../pages/data/projects.json'
 import Link from 'next/link'
 
 const Projects = () => {
+
+  const projects = [
+    {
+      "name": "Calculator",
+      "description": "Basic React Calculator",
+      "link": "/calculator"
+    },
+    {
+      "name": "Markdown",
+      "description": "Create your formatted text using a plain text editor",
+      "link": "/markdown"
+    },
+    {
+      "name": "Tic Tac Toe",
+      "description": "2 Players tic tac toe game",
+      "link": "/tictactoe"
+    }
+  ]
+  
   return (
     <ul className={styles.parent}>
 			{
