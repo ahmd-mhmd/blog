@@ -1,0 +1,84 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 2rem;
+    position: fixed;
+    z-index: 100;
+    background-color: #fffa;
+    width: 100%;
+    height: 4rem;
+    backdrop-filter: blur(5px);
+}
+.links{
+    display: flex;
+    gap: 1rem;
+}
+.link{
+    color: #333;
+    padding: 5px 1rem;
+    transition: color .3s ease;
+}
+.link:hover{
+    color: #0070f3
+}
+.active{
+    color: #0070f3;
+    position: relative;
+    padding: 5px 1rem;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.active::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 3px;
+    background-color: #0070f3;
+}
+.phoneNav{
+    transform: scale(2,2);
+    position: absolute;
+    right: 2rem;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav svg{
+    display: none;
+}
+.backdrop{
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000a;
+}
+.modal{
+    width: 80vw;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+@media screen and (max-width: 660px) {
+    .nav svg{
+        display: inline;
+    }
+    .nav .links{
+        display: none;
+    }
+}

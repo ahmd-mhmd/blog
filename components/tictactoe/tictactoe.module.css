@@ -1,0 +1,76 @@
+
+.parent{
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #fff;
+}
+.results{
+  display: flex;
+  gap: 30px;
+  font-size: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+.results>*{
+  background-color: #333;
+  padding: 5px 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table{
+  width: 300px;
+  max-width: 90vw;
+  aspect-ratio: 1/1;
+  background-color: #333;  
+}
+.tableContent{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100%;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+}
+.tableContent>*{
+  list-style: none;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+.turn{
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  margin: 30px auto;
+  color: #eee
+}
+.playAgain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+.playAgain>button{
+  padding: 10px 30px;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(1, 196, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.playAgain>button>svg{
+  transform: rotate(45deg);
+}

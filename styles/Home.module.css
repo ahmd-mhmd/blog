@@ -1,0 +1,59 @@
+.header{
+  background-image: url('https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&w=1000&q=80');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: inset 0px -20vh 20vh 5vh rgba(0, 0, 0, .6);
+  color: #fff;
+  position: relative;
+  text-align: center;
+}
+.header>h1{
+  text-shadow: 5px 5px 10px #000e;
+}
+.blue{
+  color: #0070f3;
+}
+.darr{
+  position: absolute;
+  font-size: 3rem;
+  bottom: 2rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(90deg);
+}
+.title{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title>div{
+  padding: 1rem 20px 5px 20px;
+  margin-bottom: 2rem;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.title>div::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #0070f3;
+}
+.skills{
+  margin-bottom: 3rem;
+}
